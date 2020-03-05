@@ -1,5 +1,5 @@
 # Jira-Full-Dark-CSS-Theme
-[Jira Full Dark](1) theme for the [Stylish](2) browser plugin.  
+[Jira Full Dark][1] theme for the [Stylish][2] browser plugin.  
 
 This theme is based on Bejamin Bagley's excellent "Jira Dark Flat" theme. Benjamin's theme is the best I'd found yet, but it leaves a few elements in Bitbucket and JIRA with a white background, and it doesn't retain the custom header color defined on my JIRA server. This theme corrects both of those behaviors.
 
