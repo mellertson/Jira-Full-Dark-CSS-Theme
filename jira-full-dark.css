@@ -103,6 +103,11 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
 }
 
 
+/* Jira Road Map on Dashboard */
+.g-roadmap .rm {
+    color: #979797;
+}
+
 
 /* Saturday and Sunday in Jira Calendar */
 .fc-content table tr:nth-child(3) .fc-sat, .fc-content table tr:nth-child(3) .fc-sun, .fc-time-area.fc-widget-content .fc-sun, .fc-time-area.fc-widget-content .fc-sat, .fc-day.fc-sun, .fc-day.fc-sat, .fc-content table tr:nth-child(1) th:nth-child(odd), .fc-content table tr:nth-child(1) th:nth-child(odd), .fc-content table tr:nth-child(2) th:nth-child(odd), .fc-content table tr:nth-child(2) th:nth-child(odd), .fc-day-header.fc-widget-header.fc-sat, .fc-day-header.fc-widget-header.fc-sun {
