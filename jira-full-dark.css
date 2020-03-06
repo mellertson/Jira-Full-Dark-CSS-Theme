@@ -68,6 +68,42 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
     background: #494949;
 }
 
+/* left nav mendu on dashboard */
+#dashboard > div.dashboard-tabs.tabs.vertical {
+    background: #232729;
+}
+
+/* Dashboard Calendar */
+#dashboard>.vertical.tabs  {
+    background: #232729;
+    background-color: #232729!important;
+}
+.dayOfWeekTitle {
+    background: #494949;
+}
+.weekDay {
+    color: white;
+    background: #474F53;
+}
+.weekendDay {
+    color: white;
+    background: #273F55;
+}
+.today {
+    color: white;
+    background: #4A4A17!important;
+}
+.otherMonth {
+    color: white;
+    background: #232729!important;
+}
+
+.versionsTitle {
+    color: white;
+}
+
+
+
 /* Saturday and Sunday in Jira Calendar */
 .fc-content table tr:nth-child(3) .fc-sat, .fc-content table tr:nth-child(3) .fc-sun, .fc-time-area.fc-widget-content .fc-sun, .fc-time-area.fc-widget-content .fc-sat, .fc-day.fc-sun, .fc-day.fc-sat, .fc-content table tr:nth-child(1) th:nth-child(odd), .fc-content table tr:nth-child(1) th:nth-child(odd), .fc-content table tr:nth-child(2) th:nth-child(odd), .fc-content table tr:nth-child(2) th:nth-child(odd), .fc-day-header.fc-widget-header.fc-sat, .fc-day-header.fc-widget-header.fc-sun {
     background-color: #444343;
