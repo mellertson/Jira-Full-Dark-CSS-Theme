@@ -137,6 +137,13 @@ div > div.ghx-subtask-group > div.js-detailview.ghx-issue.js-issue.ghx-has-avata
 #gh:not(.ghx-sticky-sprint-headers-disabled) .ghx-backlog-container .ghx-backlog-header {
     background: #1E2023;
 }
+.ghx-swimlane-header {
+    background-color: #1C2F38;
+}
+path {
+    fill:#CF613A;
+}
+
 
 /* Backlog sidebard */
 .ghx-classification-item {
