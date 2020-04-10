@@ -9,6 +9,8 @@ Enjoy!
 
 # Release Notes
 
+Version 1.2.10 - Updates provided by Kamil "KajeQ" HajczyK.
+
 Version 1.2.9 - Misc improvements.
 
 Version 1.2.8 - Added styles for Jira calendar on dashboard and nav bar on dashboard.
