@@ -56,6 +56,9 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
 .issue-list>li .splitview-issue-link .issue-link-summary {
     color: #999999;
 }
+#navigator-sidebar {
+    background: #202020;
+}
 
 /* Account Profile Heading */
 #content > header {
@@ -74,7 +77,8 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
 }
 
 /* Dashboard Calendar */
-#dashboard>.vertical.tabs  {
+#dashboard>.vertical.tabs,
+#content > div > div.calendar-view-page-panel {
     background: #232729;
     background-color: #232729!important;
 }
@@ -97,9 +101,29 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
     color: white;
     background: #232729!important;
 }
-
 .versionsTitle {
     color: white;
+}
+#content-root > div.Popover.Popover-above,
+#jira > div.Popover.Popover-above, 
+#jira > div.Popover.Popover-below,
+#content-root > div.Popover.Popover-below > div {
+    color: white;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-grow.padded.full-width > div > div > div > div.fc-toolbar.fc-header-toolbar > div.fc-right > button.fc-hideWeekends-button.ak-button.ak-button__appearance-default.fc-state-default.fc-corner-left.fc-corner-right,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-grow.padded.full-width > div > div > div > div.fc-toolbar.fc-header-toolbar > div.fc-right > button.fc-fullscreenIn-button.ak-button.ak-button__appearance-default.fc-state-default.fc-corner-left.fc-corner-right,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-grow.padded.full-width > div > div > div > div.fc-toolbar.fc-header-toolbar > div.fc-left > div {
+    color:#505F79;
+    background: #202020;
+}
+#content > div > div.full-width > header > div:nth-child(2) > div > div > div > div:nth-child(1) > div > div > button > span > span:nth-child(1) > span > svg > path, 
+#content > div > div.full-width > header > div:nth-child(2) > div > div > div > div:nth-child(1) > div > div > button > span > span.css-mu6jxl,
+#content > div > div.full-width > header > div:nth-child(3) > div > div > div > div:nth-child(1) > div > div > button > span > span.css-mu6jxl {
+    color: white;
+    
+}
+#content > div {
+    background-color: #474F53;
 }
 
 
@@ -148,6 +172,18 @@ path {
 /* Backlog sidebard */
 .ghx-classification-item {
     background-color: #202020;
+}
+
+
+/* Markin Markdown rendered code */
+#comment-10516 > div.twixi-wrap.verbose.actionContainer > div.action-body.flooded > div > div.markin-content.proportionalFont > pre > code {
+    background-color: #2E2E2E;
+    color: white;
+}
+
+/* Filters drop down menu in Backlog */
+.aui-dropdown2.aui-style-default strong {
+    color: #9B9B9B;
 }
 
 
