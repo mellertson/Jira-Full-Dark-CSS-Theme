@@ -9,6 +9,10 @@ Enjoy!
 
 # Release Notes
 
+Version 1.2.9 - Misc improvements.
+
+Version 1.2.8 - Added styles for Jira calendar on dashboard and nav bar on dashboard.
+
 Version 1.2.7 - Added styles for Account Profile page.
 
 Version 1.2.6 - Added dard styles to Jira Backlog page.
