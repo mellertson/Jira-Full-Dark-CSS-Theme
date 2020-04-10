@@ -227,6 +227,19 @@ path {
 .ghx-type-3 > div.ghx-grabber {
 	background-color: #2f557b !important;
 }
+
+/* BEGIN: additions by Kamil "KajeQ" HajczyK */
+.quicksearch-dropdown{
+    border: solid 1px;
+}.quick-search-result-group .quick-search-active{
+    background-color: #444 !important;
+}
+.aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top{
+    border: solid 1px;
+    border-radius: 3px;
+}
+/* END: additions by Kamil "KajeQ" HajczyK */
+
 html,
 body,
 html body,
@@ -258,6 +271,9 @@ html body.no-title,
 .jira-dialog .buttons-container,
 .jira-dialog .jira-dialog-heading h2,
 .jira-dialog .jira-dialog-heading,
+.navigator-sidebar, 
+.count-pagination,
+.quicksearch-dropdown
 .jira-dialog .jira-dialog-content,
 .issue-view > .issue-container .issue-header,
 .issue-header .issue-header-content > .command-bar,
