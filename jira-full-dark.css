@@ -1,4 +1,3 @@
-@-moz-document url-prefix("https://jira"), url-prefix("http://jira"), url-prefix("https://bamboo"), url-prefix("http://bamboo"), url-prefix("https://confluence.atlassian.com"), regexp("http[s]*[:][/]+.*[/]jira.*"), regexp("http[s]*[:][/]+.*[/]bamboo.*") {
 /* Bitbucket AUI Side Panel */
 aside.aui-page-panel-sidebar,
 aside.aui-page-panel-sidebar section {
@@ -143,6 +142,43 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
     background: #202020;
     border-color: #dee3e9;
 }
+/* Jira Calendar - Calendar "checked" */
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.cFWGJZ > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.gilLbf > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.kSyJUk > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.jVSMwm > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.yvAUx > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.cQgGlF > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.bwDxho > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.bprrdS > svg > g > path {
+    fill: white;
+}
+
+/* Jira Calendar - Calendar "un-checked" */
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.ghELrS > svg > g > path {
+    fill: #AC707A;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.fhqBaA > svg > g > path {
+    fill: #D04A32;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.jFHjdW > svg > g > path {
+    fill:#588E87;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.lfWDQS > svg > g > path {
+    fill:#67AB49;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.eRLZGV > svg > g > path {
+    fill:#4A6785;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.ixjGum > svg > g > path {
+    fill:#205081;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.jyQbxj > svg > g > path {
+    fill: #D7AD43;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.fRCZBZ > svg > g > path {
+    fill: #E18434;
+}
 
 /* Vote badge */
 aui-badge {
@@ -186,6 +222,25 @@ path {
     color: #9B9B9B;
 }
 
+/* Markin Markdown text display field */
+#description-form > div.inline-edit-fields > div > div.CodeMirror.cm-s-default.CodeMirror-wrap > div.CodeMirror-scroll > div.CodeMirror-sizer > div > div {
+    background: #141414;
+}
+div.markin-content.system-field {
+    background: #141414!important;
+}
+div.markin-content.system-field * li {
+    color: #999999;
+    background: #141414!important;
+}
+.markin-content code {
+    background: #2A2D30;   
+    color: #E8912D;
+}
+
+table.aui > tbody > tr > td {
+    background: #141414;
+}
 
 /* Everything Else */
 .ghx-end,
@@ -310,7 +365,7 @@ form.aui optgroup option,
 .screen-editor .available-fields,
 .tempo .tempo-stalker-content.stalker-content.issue-header-content .aui-page-header,
 .content-container {
-	background: #303030 !important;
+	background: #303030;
 	color: #999;
 }
 .ghx-swimlane-header.ghx-selected:after,
@@ -1456,5 +1511,4 @@ div.attachments-drop-zone__dragover-info {
 }
 ::-webkit-scrollbar-thumb:active {
 	background: rgba(255, 255, 255, .5);
-}
 }
