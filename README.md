@@ -9,6 +9,8 @@ Enjoy!
 
 # Release Notes
 
+Version 1.2.11 - Styling Moqups and Tempo app buttons in Jira tasks
+
 Version 1.2.10 - Updates provided by Kamil "KajeQ" HajczyK.
 
 Version 1.2.9 - Misc improvements.
