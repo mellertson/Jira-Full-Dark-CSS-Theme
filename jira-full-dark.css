@@ -52,6 +52,46 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
     background: #CF613A;
 }
 
+
+/*****     BEGIN Branch modal in Jira task        *****/
+/*         middle window background                   */
+.jira-dialog .jira-dialog-content {
+    background: #303030;
+}
+/*****     END  Branch modal in Jira task        *****/
+
+
+/*****     BEGIN Tempo section in Jira task      *****/
+/*         background                                */
+div#tempoIssueViewPanel {
+    background-color: #404040;
+}
+/*         Tempo buttons                             */
+button.sc-dnqmqq[name=esPlanTimeBtn],
+button.sc-dnqmqq[name=esAddExpenseBtn] {
+    color:#9A9A9A;
+    border-color: #303030;
+    background-color:#303030;
+}
+/*****     END  Branch modal in Jira task        *****/
+
+
+/*****     BEGIN Moqupss section in Jira task      *****/
+/*         Moqups section                              */
+div.mod-content.mq-zone {
+    background-color: #404040;
+}
+/*         Moqups buttons                              */
+a.aui-button.mq-zone__add-button,
+button.sc-dnqmqq[name=esAddExpenseBtn] {
+    color:#9A9A9A;
+    border-color: #303030;
+    background-color:#303030;
+}
+/*****     END  Branch modal in Jira task        *****/
+
+
+
 /* Task Titles in Jira Open Issues */
 .issue-list>li .splitview-issue-link .issue-link-summary {
     color: #999999;
@@ -59,6 +99,31 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
 #navigator-sidebar {
     background: #202020;
 }
+/*****       BEGIN Sub Task       *****/
+/*           Sub-task border          */
+.ghx-parent-group.ghx-away {
+    background-color: #0B2547;
+}
+.ghx-parent-stub .ghx-key {
+    border-left: 10px solid #2684FF!important;
+}
+/*****       END Sub Task         *****/
+
+/***** BEGIN Create/Edit Issue screen *****/
+/* Create Issue screen - background */
+div.jira-dialog-content > div.qf-container > div > form > div.form-body {
+    background:#303030;
+}
+/* Create Issue screen - input fields */
+div.field-group input,
+div.field-group select,
+div.field-group textarea,
+div.field-group div.CodeMirror {
+    border: #808080!important;
+    background-color: #808080!important;
+}
+/***** END Create/Edit Issue screen *****/
+
 
 /* Account Profile Heading */
 #content > header {
@@ -143,6 +208,43 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
     background: #202020;
     border-color: #dee3e9;
 }
+/* Jira Calendar - Calendar "checked" */
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.cFWGJZ > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.gilLbf > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.kSyJUk > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.jVSMwm > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.yvAUx > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.cQgGlF > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.bwDxho > svg > g > path,
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.bprrdS > svg > g > path {
+    fill: white;
+}
+
+/* Jira Calendar - Calendar "un-checked" */
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.ghELrS > svg > g > path {
+    fill: #AC707A;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.fhqBaA > svg > g > path {
+    fill: #D04A32;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.jFHjdW > svg > g > path {
+    fill:#588E87;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.lfWDQS > svg > g > path {
+    fill:#67AB49;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.eRLZGV > svg > g > path {
+    fill:#4A6785;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.ixjGum > svg > g > path {
+    fill:#205081;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.jyQbxj > svg > g > path {
+    fill: #D7AD43;
+}
+#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.fRCZBZ > svg > g > path {
+    fill: #E18434;
+}
 
 /* Vote badge */
 aui-badge {
@@ -186,6 +288,25 @@ path {
     color: #9B9B9B;
 }
 
+/* Markin Markdown text display field */
+#description-form > div.inline-edit-fields > div > div.CodeMirror.cm-s-default.CodeMirror-wrap > div.CodeMirror-scroll > div.CodeMirror-sizer > div > div {
+    background: #141414;
+}
+div.markin-content.system-field {
+    background: #141414!important;
+}
+div.markin-content.system-field * li {
+    color: #999999;
+    background: #141414!important;
+}
+.markin-content code {
+    background: #2A2D30;   
+    color: #E8912D;
+}
+
+table.aui > tbody > tr > td {
+    background: #141414;
+}
 
 /* Everything Else */
 .ghx-end,
