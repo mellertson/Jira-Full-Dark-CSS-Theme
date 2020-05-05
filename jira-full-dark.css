@@ -1,3 +1,4 @@
+@-moz-document url-prefix("https://jira"), url-prefix("http://jira"), url-prefix("https://bamboo"), url-prefix("http://bamboo"), url-prefix("https://confluence.atlassian.com"), regexp("http[s]*[:][/]+.*[/]jira.*"), regexp("http[s]*[:][/]+.*[/]bamboo.*") {
 /* Bitbucket AUI Side Panel */
 aside.aui-page-panel-sidebar,
 aside.aui-page-panel-sidebar section {
@@ -51,6 +52,46 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
     background: #CF613A;
 }
 
+
+/*****     BEGIN Branch modal in Jira task        *****/
+/*         middle window background                   */
+.jira-dialog .jira-dialog-content {
+    background: #303030;
+}
+/*****     END  Branch modal in Jira task        *****/
+
+
+/*****     BEGIN Tempo section in Jira task      *****/
+/*         background                                */
+div#tempoIssueViewPanel {
+    background-color: #404040;
+}
+/*         Tempo buttons                             */
+button.sc-dnqmqq[name=esPlanTimeBtn],
+button.sc-dnqmqq[name=esAddExpenseBtn] {
+    color:#9A9A9A;
+    border-color: #303030;
+    background-color:#303030;
+}
+/*****     END  Branch modal in Jira task        *****/
+
+
+/*****     BEGIN Moqupss section in Jira task      *****/
+/*         Moqups section                              */
+div.mod-content.mq-zone {
+    background-color: #404040;
+}
+/*         Moqups buttons                              */
+a.aui-button.mq-zone__add-button,
+button.sc-dnqmqq[name=esAddExpenseBtn] {
+    color:#9A9A9A;
+    border-color: #303030;
+    background-color:#303030;
+}
+/*****     END  Branch modal in Jira task        *****/
+
+
+
 /* Task Titles in Jira Open Issues */
 .issue-list>li .splitview-issue-link .issue-link-summary {
     color: #999999;
@@ -58,6 +99,31 @@ div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
 #navigator-sidebar {
     background: #202020;
 }
+/*****       BEGIN Sub Task       *****/
+/*           Sub-task border          */
+.ghx-parent-group.ghx-away {
+    background-color: #0B2547;
+}
+.ghx-parent-stub .ghx-key {
+    border-left: 10px solid #2684FF!important;
+}
+/*****       END Sub Task         *****/
+
+/***** BEGIN Create/Edit Issue screen *****/
+/* Create Issue screen - background */
+div.jira-dialog-content > div.qf-container > div > form > div.form-body {
+    background:#303030;
+}
+/* Create Issue screen - input fields */
+div.field-group input,
+div.field-group select,
+div.field-group textarea,
+div.field-group div.CodeMirror {
+    border: #808080!important;
+    background-color: #808080!important;
+}
+/***** END Create/Edit Issue screen *****/
+
 
 /* Account Profile Heading */
 #content > header {
@@ -1511,4 +1577,5 @@ div.attachments-drop-zone__dragover-info {
 }
 ::-webkit-scrollbar-thumb:active {
 	background: rgba(255, 255, 255, .5);
+}
 }
