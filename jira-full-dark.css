@@ -430,8 +430,9 @@ form.aui optgroup option,
 .intform form,
 .screen-editor .available-fields,
 .tempo .tempo-stalker-content.stalker-content.issue-header-content .aui-page-header,
-.content-container {
-	background: #303030;
+.content-container,
+.jira-dialog-content {
+	background: #303030 !important;
 	color: #999;
 }
 .ghx-swimlane-header.ghx-selected:after,
