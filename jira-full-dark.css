@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://jira"), url-prefix("http://jira"), url-prefix("https://bamboo"), url-prefix("http://bamboo"), url-prefix("https://confluence.atlassian.com"), regexp("http[s]*[:][/]+.*[/]jira.*"), regexp("http[s]*[:][/]+.*[/]bamboo.*") {
+@-moz-document regexp("http[s]*[:]//(jira[\\w\\.]+(com|org|edu|gov|net|mil)|[\\w\\.]+/jira)(?!/plugins/servlet/com.moqups.plugin)+.*"), regexp("http[s]*[:]//(bamboo[\\w\\.]+(com|org|edu|gov|net|mil)|[\\w\\.]+/bamboo)(?!/plugins/servlet/com.moqups.plugin)+.*") {
 /* Bitbucket AUI Side Panel */
 aside.aui-page-panel-sidebar,
 aside.aui-page-panel-sidebar section {
@@ -430,9 +430,8 @@ form.aui optgroup option,
 .intform form,
 .screen-editor .available-fields,
 .tempo .tempo-stalker-content.stalker-content.issue-header-content .aui-page-header,
-.content-container,
-.jira-dialog-content {
-	background: #303030 !important;
+.content-container {
+	background: #303030;
 	color: #999;
 }
 .ghx-swimlane-header.ghx-selected:after,
