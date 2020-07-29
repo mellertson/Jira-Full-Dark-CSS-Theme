@@ -1,3 +1,13 @@
+/* ==UserStyle==
+@name         Jira Full Dark
+@namespace    https://github.com/mellertson/Jira-Full-Dark
+@version      1.2.11
+@license      Unlicense
+@preprocessor default
+@homepageURL  https://github.com/mellertson/Jira-Full-Dark-CSS-Theme
+@updateURL    https://raw.githubusercontent.com/mellertson/Jira-Full-Dark-CSS-Theme/master/jira-full-dark.user.css
+==/UserStyle== */
+
 @-moz-document regexp("http[s]*[:]//(jira[\\w\\.]+(com|org|edu|gov|net|mil)|[\\w\\.]+/jira)(?!/plugins/servlet/com.moqups.plugin)+.*"), regexp("http[s]*[:]//(bamboo[\\w\\.]+(com|org|edu|gov|net|mil)|[\\w\\.]+/bamboo)(?!/plugins/servlet/com.moqups.plugin)+.*") {
 /* Bitbucket AUI Side Panel */
 aside.aui-page-panel-sidebar,
