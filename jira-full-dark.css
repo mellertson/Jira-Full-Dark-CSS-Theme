@@ -255,8 +255,8 @@ aui-badge {
 /* Agile Wallboard Gadget */
 div > div.ghx-subtask-group > div.js-detailview.ghx-issue.js-issue.ghx-has-avatar.ghx-issue-subtask.ghx-days-0.ghx-selected.ghx-selected-primary.ghx-type-10003,
 .ghx-issue:hover {
+    background: #202020 !important;
 	background-color: #202020 !important;
-	background: #202020 !important;
 }
 
 /* Backlog page */
@@ -394,7 +394,7 @@ html body.no-title,
 .jira-dialog .jira-dialog-heading,
 .navigator-sidebar, 
 .count-pagination,
-.quicksearch-dropdown
+.quicksearch-dropdown,
 .jira-dialog .jira-dialog-content,
 .issue-view > .issue-container .issue-header,
 .issue-header .issue-header-content > .command-bar,
@@ -1005,6 +1005,7 @@ form.aui .button:hover,
 .issue-table > tfoot > tr > td {
 	border-bottom: 1px solid #404040;
 }
+/* invert colors */
 form.aui div.radio input.radio,
 form.aui div.checkbox input.checkbox,
 body > div.gadget.default > div > div > img,
@@ -1016,8 +1017,7 @@ body > div.gadget.default > div > div > img,
 .twixi-block .icon-twixi,
 .toggle-wrap .icon-twixi,
 .twixi-block .twixi-opened,
-.toggle-wrap .twixi-opened,
-.aui-icon {
+.toggle-wrap .twixi-opened {
 	filter: invert(100%);
 }
 .aui-header > div > div > ul > li > a > .aui-icon,
@@ -1104,8 +1104,6 @@ h2.expanded *,
 	background-color: #443a33;
 	color: #FFFFFF;
 }
-
-
 
 #plan-status-history *,
 #plan-status-history > a > span {
@@ -1578,4 +1576,8 @@ div.attachments-drop-zone__dragover-info {
 ::-webkit-scrollbar-thumb:active {
 	background: rgba(255, 255, 255, .5);
 }
+
+/* text fields */
+.atlassian-autocomplete .suggestions, .atlassian-autocomplete .suggestions li, .query-component .search-container[data-mode="basic"] .search-entry, .check-list-select .check-list-field-container .check-list-field, form.aui .text, form.aui .password, form.aui .upfile, form.aui .textarea, form.aui .select, form.aui .multi-select, form.aui .aui-select2-container, .ajs-layer {
+    color: #24161B !important;
 }
