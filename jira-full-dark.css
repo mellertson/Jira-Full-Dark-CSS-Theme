@@ -1,5 +1,20 @@
+/* ==UserStyle==
+@name         Jira Full Dark
+@namespace    USO Archive
+@author       Mike Ellertson
+@description  A dark theme for Jira, which compliments my Bitbucket Full Dark theme.
+@version      2025.04.12
+@license      NONE
+@preprocessor uso
+==/UserStyle== */
 @-moz-document regexp("http[s]*[:]//(jira[\\w\\.]+(com|org|edu|gov|net|mil)|[\\w\\.]+/jira)(?!/plugins/servlet/com.moqups.plugin)+.*"), regexp("http[s]*[:]//(bamboo[\\w\\.]+(com|org|edu|gov|net|mil)|[\\w\\.]+/bamboo)(?!/plugins/servlet/com.moqups.plugin)+.*") {
-/* Bitbucket AUI Side Panel */
+
+/********** Global **********/
+/* Global header */
+.bitbucket-theme #content > header {
+	background-color: #202020;
+}
+/* Global Left Side Panel */
 aside.aui-page-panel-sidebar,
 aside.aui-page-panel-sidebar section {
 	background-color: #202020;
@@ -9,6 +24,62 @@ aside.aui-page-panel-sidebar section div.welcome-mat p {
 	background-color: #303030;
 	color: #deebff;
 }
+/* global footer */
+body #footer-logo {
+	background: #202020;
+}
+
+
+/********** Project **********/
+/* Project list items */
+.paged-table tr td:first-child,
+.paged-table tr.focused td {
+	background-color: #303030;
+}
+
+
+/********** Repo **********/
+/* Repo header */
+.paged-table-filter-input {
+	background: #303030;
+}
+/* Repo header -> filter text */
+.paged-table-filter-input::placeholder {
+	color: #999999;
+}
+/* Repo header */
+.filterable-entity-table .paged-table-filter {
+	background-color: #202020;
+}
+/* Repo README.md files */
+.markup code {
+	background-color: #083376;
+}
+/* Repo Labels field */
+.empty-labels-wrapper .empty-labels-input {
+	background-color: #404040;
+}
+.empty-labels-wrapper .empty-labels-input::placeholder {
+	color: #8F8F8F;
+}
+
+
+/********** Markdown **********/
+/* Markdown command options */
+.cm-s-stash-default .cm-attribute,
+.cm-s-stash-default .cm-builtin {
+	color: #32fe3b;
+}
+/* Markdown comments */
+.cm-s-stash-default .cm-comment {
+	color: #4FAA47;
+	font-weight: bold;
+}
+/* Markdown bash command */
+.markup-content,
+.cm-s-stash-default .cm-builtin {
+	color: #FAFBFC;
+}
 
 /* Jira side panel background */
 #content > div.aui-page-panel > div > div {
@@ -17,15 +88,41 @@ aside.aui-page-panel-sidebar section div.welcome-mat p {
 
 /* Jira System Dashboard Background */
 #dashboard-content {
-	background-color: #303030!important;
+	background-color: #303030;
 }
 
 /* Jira System Dashboard Header Background */
 #dashboard-content > div.aui-page-header {
-	background-color: #303030!important;
-	border-color: #cf613a59;
+	background-color: #303030;
+	border-color: #0747A659;
 	border-style: solid;
 	border-width: 3px;
+}
+
+/* Repo links */
+.repository-list-container .search-results-container .search-results-item a {
+    color: #3b79d5;
+}
+
+/* Text in README.md */
+.markup-content {
+    color: #FAFBFC;
+}
+
+/* Labels */
+.labels-title {
+    color: #FAFBFC;
+}
+
+/* Label Field */
+.label-container .label-editor .adg2-react-select .Select-placeholder {
+    color: #FAFBFC;
+    background-color: #4f4f4f;
+}
+
+/* commit messages */
+.filebrowser-table .directory-file-history.message a {
+    color: #FAFBFC;
 }
 
 /* Table Heading in a Task Description (edit window) */
@@ -42,161 +139,20 @@ body#tinymce table tr td {
 
 /* Jira Task "Expand" buttons */
 a.aui-button.toggle-title > svg > g > path {
-    fill: #CF613A;
+    fill: #0747A6;
 }
 
 /* Jira Task Activity tabs */
 div.tabwrap.aui-tabs.horizontal-tabs > ul#issue-tabs > li.active-tab.active > a,
 .aui-tabs.horizontal-tabs>.tabs-menu>.menu-item.active-tab a:after {
-    color: #CF613A;
-    background: #CF613A;
+    color: #0747A6;
+    background: #0747A6;
 }
-
-
-/*****     BEGIN Branch modal in Jira task        *****/
-/*         middle window background                   */
-.jira-dialog .jira-dialog-content {
-    background: #303030;
-}
-/*****     END  Branch modal in Jira task        *****/
-
-
-/*****     BEGIN Tempo section in Jira task      *****/
-/*         background                                */
-div#tempoIssueViewPanel {
-    background-color: #404040;
-}
-/*         Tempo buttons                             */
-button.sc-dnqmqq[name=esPlanTimeBtn],
-button.sc-dnqmqq[name=esAddExpenseBtn] {
-    color:#9A9A9A;
-    border-color: #303030;
-    background-color:#303030;
-}
-/*****     END  Branch modal in Jira task        *****/
-
-
-/*****     BEGIN Moqupss section in Jira task      *****/
-/*         Moqups section                              */
-div.mod-content.mq-zone {
-    background-color: #404040;
-}
-/*         Moqups buttons                              */
-a.aui-button.mq-zone__add-button,
-button.sc-dnqmqq[name=esAddExpenseBtn] {
-    color:#9A9A9A;
-    border-color: #303030;
-    background-color:#303030;
-}
-/*****     END  Branch modal in Jira task        *****/
-
-
 
 /* Task Titles in Jira Open Issues */
 .issue-list>li .splitview-issue-link .issue-link-summary {
     color: #999999;
 }
-#navigator-sidebar {
-    background: #202020;
-}
-/*****       BEGIN Sub Task       *****/
-/*           Sub-task border          */
-.ghx-parent-group.ghx-away {
-    background-color: #0B2547;
-}
-.ghx-parent-stub .ghx-key {
-    border-left: 10px solid #2684FF!important;
-}
-/*****       END Sub Task         *****/
-
-/***** BEGIN Create/Edit Issue screen *****/
-/* Create Issue screen - background */
-div.jira-dialog-content > div.qf-container > div > form > div.form-body {
-    background:#303030;
-}
-/* Create Issue screen - input fields */
-div.field-group input,
-div.field-group select,
-div.field-group textarea,
-div.field-group div.CodeMirror {
-    border: #808080!important;
-    background-color: #808080!important;
-}
-/***** END Create/Edit Issue screen *****/
-
-
-/* Account Profile Heading */
-#content > header {
-    background-color: #494949;
-}
-
-/* Account Profile Summary Field */
-#content > div > div > section > header > div {
-    color: #494949;
-    background: #494949;
-}
-
-/* left nav mendu on dashboard */
-#dashboard > div.dashboard-tabs.tabs.vertical {
-    background: #232729;
-}
-
-/* Dashboard Calendar */
-#dashboard>.vertical.tabs,
-#content > div > div.calendar-view-page-panel {
-    background: #232729;
-    background-color: #232729!important;
-}
-.dayOfWeekTitle {
-    background: #494949;
-}
-.weekDay {
-    color: white;
-    background: #474F53;
-}
-.weekendDay {
-    color: white;
-    background: #273F55;
-}
-.today {
-    color: white;
-    background: #4A4A17!important;
-}
-.otherMonth {
-    color: white;
-    background: #232729!important;
-}
-.versionsTitle {
-    color: white;
-}
-#content-root > div.Popover.Popover-above,
-#jira > div.Popover.Popover-above, 
-#jira > div.Popover.Popover-below,
-#content-root > div.Popover.Popover-below > div {
-    color: white;
-}
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-grow.padded.full-width > div > div > div > div.fc-toolbar.fc-header-toolbar > div.fc-right > button.fc-hideWeekends-button.ak-button.ak-button__appearance-default.fc-state-default.fc-corner-left.fc-corner-right,
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-grow.padded.full-width > div > div > div > div.fc-toolbar.fc-header-toolbar > div.fc-right > button.fc-fullscreenIn-button.ak-button.ak-button__appearance-default.fc-state-default.fc-corner-left.fc-corner-right,
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-grow.padded.full-width > div > div > div > div.fc-toolbar.fc-header-toolbar > div.fc-left > div {
-    color:#505F79;
-    background: #202020;
-}
-#content > div > div.full-width > header > div:nth-child(2) > div > div > div > div:nth-child(1) > div > div > button > span > span:nth-child(1) > span > svg > path, 
-#content > div > div.full-width > header > div:nth-child(2) > div > div > div > div:nth-child(1) > div > div > button > span > span.css-mu6jxl,
-#content > div > div.full-width > header > div:nth-child(3) > div > div > div > div:nth-child(1) > div > div > button > span > span.css-mu6jxl {
-    color: white;
-    
-}
-#content > div {
-    background-color: #474F53;
-}
-
-
-/* Jira Road Map on Dashboard */
-.g-roadmap .rm {
-    color: #979797;
-}
-
 
 /* Saturday and Sunday in Jira Calendar */
 .fc-content table tr:nth-child(3) .fc-sat, .fc-content table tr:nth-child(3) .fc-sun, .fc-time-area.fc-widget-content .fc-sun, .fc-time-area.fc-widget-content .fc-sat, .fc-day.fc-sun, .fc-day.fc-sat, .fc-content table tr:nth-child(1) th:nth-child(odd), .fc-content table tr:nth-child(1) th:nth-child(odd), .fc-content table tr:nth-child(2) th:nth-child(odd), .fc-content table tr:nth-child(2) th:nth-child(odd), .fc-day-header.fc-widget-header.fc-sat, .fc-day-header.fc-widget-header.fc-sun {
@@ -208,43 +164,6 @@ div.field-group div.CodeMirror {
     background: #202020;
     border-color: #dee3e9;
 }
-/* Jira Calendar - Calendar "checked" */
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.cFWGJZ > svg > g > path,
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.gilLbf > svg > g > path,
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.kSyJUk > svg > g > path,
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.jVSMwm > svg > g > path,
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.yvAUx > svg > g > path,
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.cQgGlF > svg > g > path,
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.bwDxho > svg > g > path,
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.bprrdS > svg > g > path {
-    fill: white;
-}
-
-/* Jira Calendar - Calendar "un-checked" */
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.ghELrS > svg > g > path {
-    fill: #AC707A;
-}
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.fhqBaA > svg > g > path {
-    fill: #D04A32;
-}
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.jFHjdW > svg > g > path {
-    fill:#588E87;
-}
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.lfWDQS > svg > g > path {
-    fill:#67AB49;
-}
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.eRLZGV > svg > g > path {
-    fill:#4A6785;
-}
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.ixjGum > svg > g > path {
-    fill:#205081;
-}
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.jyQbxj > svg > g > path {
-    fill: #D7AD43;
-}
-#content > div > div.calendar-view-page-panel > div.flex.flex-row > div.flex-fixed.padded > div > div > div > div.flex-1.overflow-hidden > button > span > span.css-8xpfx5 > span.sc-dnqmqq.fRCZBZ > svg > g > path {
-    fill: #E18434;
-}
 
 /* Vote badge */
 aui-badge {
@@ -255,78 +174,30 @@ aui-badge {
 /* Agile Wallboard Gadget */
 div > div.ghx-subtask-group > div.js-detailview.ghx-issue.js-issue.ghx-has-avatar.ghx-issue-subtask.ghx-days-0.ghx-selected.ghx-selected-primary.ghx-type-10003,
 .ghx-issue:hover {
-    background: #202020 !important;
 	background-color: #202020 !important;
+	background: #202020 !important;
 }
 
-/* Backlog page */
-#gh:not(.ghx-sticky-sprint-headers-disabled) .ghx-backlog-container .ghx-backlog-header {
-    background: #1E2023;
-}
-.ghx-swimlane-header {
-    background-color: #1C2F38;
-}
-path {
-    fill:#CF613A;
-}
-
-
-/* Backlog sidebard */
-.ghx-classification-item {
-    background-color: #202020;
-}
-
-
-/* Markin Markdown rendered code */
-#comment-10516 > div.twixi-wrap.verbose.actionContainer > div.action-body.flooded > div > div.markin-content.proportionalFont > pre > code {
-    background-color: #2E2E2E;
-    color: white;
-}
-
-/* Filters drop down menu in Backlog */
-.aui-dropdown2.aui-style-default strong {
-    color: #9B9B9B;
-}
-
-/* Markin Markdown text display field */
-#description-form > div.inline-edit-fields > div > div.CodeMirror.cm-s-default.CodeMirror-wrap > div.CodeMirror-scroll > div.CodeMirror-sizer > div > div {
-    background: #141414;
-}
-div.markin-content.system-field {
-    background: #141414!important;
-}
-div.markin-content.system-field * li {
-    color: #999999;
-    background: #141414!important;
-}
-.markin-content code {
-    background: #2A2D30;   
-    color: #E8912D;
-}
-
-table.aui > tbody > tr > td {
-    background: #141414;
-}
 
 /* Everything Else */
 .ghx-end,
 .ghx-corner,
 .aui-badge {
-	background-color: rgba(64, 64, 64, 0.0) !important;
+	background-color: rgba(64, 64, 64, 0.0);
 }
 .ghx-end,
 .aui-badge {
-	box-shadow: -4px 0 3px rgba(32, 32, 32, 0.0) !important;
+	box-shadow: -4px 0 3px rgba(32, 32, 32, 0.0);
 }
 .ghx-corner {
-	box-shadow: -4px 0 3px rgba(32, 32, 32, 0.75) !important;
+	box-shadow: -4px 0 3px rgba(32, 32, 32, 0.75);
 }
 .gadget .ghx-issue:hover,
 .gadget .ghx-issue.ghx-selected {
 	background: #202020;
 }
 #ghx-chart-view > canvas.base {
-	filter: invert(35%)!important;
+	filter: invert(35%);
 }
 
 /* Light Text Color #999 */
@@ -348,19 +219,6 @@ table.aui > tbody > tr > td {
 .ghx-type-3 > div.ghx-grabber {
 	background-color: #2f557b !important;
 }
-
-/* BEGIN: additions by Kamil "KajeQ" HajczyK */
-.quicksearch-dropdown{
-    border: solid 1px;
-}.quick-search-result-group .quick-search-active{
-    background-color: #444 !important;
-}
-.aui-dropdown2.aui-layer.aui-style-default.aui-alignment-element-attached-top{
-    border: solid 1px;
-    border-radius: 3px;
-}
-/* END: additions by Kamil "KajeQ" HajczyK */
-
 html,
 body,
 html body,
@@ -392,9 +250,6 @@ html body.no-title,
 .jira-dialog .buttons-container,
 .jira-dialog .jira-dialog-heading h2,
 .jira-dialog .jira-dialog-heading,
-.navigator-sidebar, 
-.count-pagination,
-.quicksearch-dropdown,
 .jira-dialog .jira-dialog-content,
 .issue-view > .issue-container .issue-header,
 .issue-header .issue-header-content > .command-bar,
@@ -431,7 +286,7 @@ form.aui optgroup option,
 .screen-editor .available-fields,
 .tempo .tempo-stalker-content.stalker-content.issue-header-content .aui-page-header,
 .content-container {
-	background: #303030;
+	background: #303030 !important;
 	color: #999;
 }
 .ghx-swimlane-header.ghx-selected:after,
@@ -1005,7 +860,6 @@ form.aui .button:hover,
 .issue-table > tfoot > tr > td {
 	border-bottom: 1px solid #404040;
 }
-/* invert colors */
 form.aui div.radio input.radio,
 form.aui div.checkbox input.checkbox,
 body > div.gadget.default > div > div > img,
@@ -1017,7 +871,8 @@ body > div.gadget.default > div > div > img,
 .twixi-block .icon-twixi,
 .toggle-wrap .icon-twixi,
 .twixi-block .twixi-opened,
-.toggle-wrap .twixi-opened {
+.toggle-wrap .twixi-opened,
+.aui-icon {
 	filter: invert(100%);
 }
 .aui-header > div > div > ul > li > a > .aui-icon,
@@ -1025,7 +880,7 @@ body > div.gadget.default > div > div > img,
 	filter: none;
 }
 .aui-header {
-	background: #cf613a;
+	background: #0747A6;
 	color: #fff;
 	border-bottom-color: #2e3d54;
 }
@@ -1079,7 +934,7 @@ tr.commit-row td.message span.message-subject a.commit-preview-trigger.commit-li
 }
 .aui-header .aui-button.aui-button-primary.aui-style {
 	color: #fff;
-	background-color: #A64E2E;
+	background-color: #0747A6;
 }
 .aui-header .aui-dropdown2-trigger:hover,
 .aui-header .aui-dropdown2-trigger:focus,
@@ -1090,7 +945,7 @@ ul.aui-nav li a.aui-nav-link.aui-dropdown2-trigger.aui-dropdown2-ajax:hover,
 .aui-header a:focus,
 .aui-header .aui-button.aui-button-primary.aui-style:hover {
 	color: #595959;
-	background-color: #F28E69;
+	background-color: #285aa4;
 }
 ul.stageList.ui-sortable li.not-collapsible.last div dl,
 ul.stageList.ui-sortable li.not-collapsible.last div,
@@ -1104,6 +959,8 @@ h2.expanded *,
 	background-color: #443a33;
 	color: #FFFFFF;
 }
+
+
 
 #plan-status-history *,
 #plan-status-history > a > span {
@@ -1125,7 +982,7 @@ li ul li *,
 }
 
 ul.ui-sortable li.item.active {
-	background-color: #A64E2E!important;
+	background-color: #0747A6!important;
 }
 
 #ghx-backlog,
@@ -1576,8 +1433,4 @@ div.attachments-drop-zone__dragover-info {
 ::-webkit-scrollbar-thumb:active {
 	background: rgba(255, 255, 255, .5);
 }
-
-/* text fields */
-.atlassian-autocomplete .suggestions, .atlassian-autocomplete .suggestions li, .query-component .search-container[data-mode="basic"] .search-entry, .check-list-select .check-list-field-container .check-list-field, form.aui .text, form.aui .password, form.aui .upfile, form.aui .textarea, form.aui .select, form.aui .multi-select, form.aui .aui-select2-container, .ajs-layer {
-    color: #24161B !important;
 }
