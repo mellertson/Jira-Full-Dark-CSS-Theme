@@ -9,38 +9,28 @@ Enjoy!
 
 # Release Notes
 
-Version 1.2.11 - Styling Moqups and Tempo app buttons in Jira tasks
-
-Version 1.2.10 - Updates provided by Kamil "KajeQ" HajczyK.
-
-Version 1.2.9 - Misc improvements.
-
-Version 1.2.8 - Added styles for Jira calendar on dashboard and nav bar on dashboard.
-
-Version 1.2.7 - Added styles for Account Profile page.
-
-Version 1.2.6 - Added dard styles to Jira Backlog page.
-
-Version 1.2.5 - Bitbucket navigation bar is now its original color (blue) from Atlassian.
-
-Version 1.2.4 - Added darker colors for Jira Calendar
-
-Version 1.2.3 - Added additional patterns to match Jira, Bitbucket, and Bamboo URLs.
-
-Version 1.2.2 - Bitbucket's "Projects" page now displays the right pane in dark grey, instead of white.
-
-Version 1.2.1 - Bug fixed for JIRA's Agile Wallboard Gadget, so that:
+## Versions
+* **2025.04.12** - Changed version numbering. Fixed background colors of code rendered by Markin Markdown plugin for Jira.
+* Version 1.2.11 - Styling Moqups and Tempo app buttons in Jira tasks
+* Version 1.2.11 - Styling Moqups and Tempo app buttons in Jira tasks
+* Version 1.2.10 - Updates provided by Kamil "KajeQ" HajczyK.
+* Version 1.2.9 - Misc improvements.
+* Version 1.2.8 - Added styles for Jira calendar on dashboard and nav bar on dashboard.
+* Version 1.2.7 - Added styles for Account Profile page.
+* Version 1.2.6 - Added dard styles to Jira Backlog page.
+* Version 1.2.5 - Bitbucket navigation bar is now its original color (blue) from Atlassian.
+* Version 1.2.4 - Added darker colors for Jira Calendar
+* Version 1.2.3 - Added additional patterns to match Jira, Bitbucket, and Bamboo URLs.
+* Version 1.2.2 - Bitbucket's "Projects" page now displays the right pane in dark grey, instead of white.
+* Version 1.2.1 - Bug fixed for JIRA's Agile Wallboard Gadget, so that:
      a) Sub-tasks still had a white background.  With 1.2.1, sub-tasks should have a dark background.
-
-Version 1.2 - Added styling to JIRA's Agile Wallboard Gadget, so that:
+* Version 1.2 - Added styling to JIRA's Agile Wallboard Gadget, so that:
      a) badges are semi-transparent.
      b) tasks on the board use dark styling.
      c) when you hover over a task, it remains dark instead of turning a blinding white color.  
-
-Version 1.1 - Added CSS for Atlassian's Bamboo, so that:
+* Version 1.1 - Added CSS for Atlassian's Bamboo, so that:
      a) "Plan Summary" and "Tests" pages use dark backgrounds.
      b) render the background of the icon bar (in the top right of screen, see screenshot) using dark background.
-
 
 [1]: https://userstyles.org/styles/154946/jira-full-dark
 [2]: https://userstyles.org/help/stylish
